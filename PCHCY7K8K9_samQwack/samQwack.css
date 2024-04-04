@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.image-size {
+    width: 300px;
+}
+
+@media screen and (max-width:576px) {
+    .image-size {
+        width: 150px;
+        height: 50px;
+    }
+}
+
+
+.btn {
+    background-color: blue;
+    border-radius: 8px;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-width: 0px;
+}
+
+.Vocabulary-page {
+    background-image: linear-gradient(to right, yellow, red);
+    height: 89vh;
+    width: 100vw;
+}
+
+.btn-pointer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+}
+
+
+.btn1 {
+    background: #FFAA33;
+    border-width: 0px;
+    padding: 35px;
+    font-size: 29px;
+    border-radius: 18px;
+    color: white;
+    margin: 10px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.btn1:hover {
+    background-color: #D3D3D3;
+}
+
+
+.btn2 {
+    background: #FFAA33;
+    border-width: 0px;
+    cursor: pointer;
+    padding: 35px;
+    font-size: 29px;
+    border-radius: 18px;
+    color: white;
+    margin: 10px;
+
+}
+
+html,
+body {
+
+    width: 100vw;
+    height: 100vh;
+    background-color: #f2f2f2;
+
+}
+
+
+
+.ocean {
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.btn2:hover {
+    background-color: #D3D3D3;
+}
+
+
+.wave {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 88.7'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%23FFFFFF'/%3E%3C/svg%3E");
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    opacity: 0.8;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+
+
+.wave:nth-of-type(2),
+.wave:nth-of-type(3) {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.wave:nth-of-type(2) {
+    animation: wave 18s linear reverse infinite;
+    opacity: 1;
+}
+
+.wave:nth-of-type(3) {
+    animation: wave 20s -1s linear infinite;
+    opacity: 0.5;
+}
+
+@keyframes wave {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+.sunrise {
+    background: linear-gradient(180deg, yellow, red);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: sunrise 3s alternate-reverse linear infinite;
+}
+
+@media screen and (min-width:576px) {
+    .sunrise {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@keyframes sunrise {
+    0% {
+        transform: translateY(0px);
+        opacity: 1;
+
+    }
+
+    50% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    55% {
+        transform: translateY(0px);
+        opacity: 1;
+
+
+    }
+
+    85% {
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(80px);
+        opacity: 0;
+    }
+}
+
+
+.info {
+    width: 100% !important;
+    display: flex;
+    cursor: pointer;
+    padding: 30px;
+    flex-direction: row;
+
+}
+
+.list {
+    list-style-type: none;
+}
+
+.anchor {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    margin-bottom: 10px;
+
+}
+
+.link-info {
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 20px;
+}
+
+.mail-details {
+    display: flex;
+}
